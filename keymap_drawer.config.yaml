@@ -1,0 +1,12 @@
+draw_config:
+  footer_text: "Tap is centered · hold behavior is shown below"
+  svg_extra_style: |
+    rect.held {
+      fill: #dce7cf;
+    }
+    text.label {
+      fill: #39452d;
+    }
+parse_config:
+  raw_binding_map:
+    "&bootloader": "BOOT"

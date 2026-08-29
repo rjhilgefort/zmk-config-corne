@@ -1,0 +1,24 @@
+name: Check keymap diagram
+
+on:
+  pull_request:
+  push:
+    paths:
+      - "config/*.keymap"
+      - "keymap_drawer.config.yaml"
+      - "scripts/render-keymap.sh"
+      - "keymap-drawer/**"
+      - ".github/workflows/check-keymap-diagram.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+      - run: ./scripts/render-keymap.sh
+      - name: Verify generated files are current
+        run: git diff --exit-code -- keymap-drawer/

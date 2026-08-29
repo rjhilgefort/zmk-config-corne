@@ -1,0 +1,141 @@
+layout: {zmk_keyboard: corne, layout_name: default_transform}
+layers:
+  Qwerty:
+  - [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC]
+  - - {t: ESC, h: LCTRL}
+    - A
+    - S
+    - D
+    - F
+    - G
+    - H
+    - J
+    - K
+    - L
+    - ;
+    - ''''
+  - [LSHFT, Z, X, C, V, B, N, M, ',', ., /, ENTER]
+  - - Raise
+    - {t: ESC, h: LALT}
+    - LGUI
+    - SPACE
+    - Lower
+    - Sft+Alt+LCTRL
+  Lower:
+  - - {t: ▽, type: trans}
+    - \
+    - /
+    - '['
+    - ']'
+    - '~'
+    - '|'
+    - '='
+    - +
+    - '-'
+    - _
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - '{'
+    - '}'
+    - (
+    - )
+    - '`'
+    - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - '!'
+    - '@'
+    - '#'
+    - $
+    - '%'
+    - ^
+    - '&'
+    - '*'
+    - (
+    - )
+    - {t: ▽, type: trans}
+  - - Extra
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ''
+    - {type: held}
+    - ''
+  Raise:
+  - - {t: ▽, type: trans}
+    - ''
+    - BRI DN
+    - VOL UP
+    - BRI UP
+    - ''
+    - ''
+    - '7'
+    - '8'
+    - '9'
+    - '*'
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - MUTE
+    - PREV
+    - PP
+    - NEXT
+    - ''
+    - ''
+    - '4'
+    - '5'
+    - '6'
+    - +
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - ''
+    - ''
+    - VOL DN
+    - ''
+    - ''
+    - ''
+    - '1'
+    - '2'
+    - '3'
+    - \
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - ''
+    - ''
+    - '0'
+    - Extra
+    - '0'
+  Extra:
+  - [BOOT, '', '', '', '', '', '', '', '', '', '', BOOT]
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+    - {t: BT, h: '5'}
+    - ''
+    - ''
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - BT CLR
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - ''
+    - ''
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
